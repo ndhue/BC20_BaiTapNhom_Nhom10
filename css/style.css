@@ -1,0 +1,37 @@
+/* GLOBAL */
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #ffc600;
+    --border-radius: 6px;
+    --footer-color:#a5a2a1; /* màu chữ phần footer */
+    --footer-bg: #000; /* màu bg phần footer */
+    --font-color-2:#ffdfc9; /* màu chữ phần about */
+    /* light */
+    --bg-color: #fff; /* toàn body*/
+    --heading-color: #232121;
+    --font-color: rgba(22, 28, 45, 0.7);
+    --bg-grey: #f7f7f7;  /* 2 phần categories và blog */
+    
+    /* dark */
+    --bg-color-dark: #232220;
+    --heading-color-dark: #eee;
+    --font-color-dark: #c2d0da;
+    --bg-grey-dark: #282828;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+.title h3{
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+}
+.title h2{
+    color: var(--heading-color);
+}
