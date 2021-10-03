@@ -35,3 +35,222 @@ html,body{
 .title h2{
     color: var(--heading-color);
 }
+/* HOME */
+
+/* ABOUT */
+
+/* BOOKING */
+.booking{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.booking__pic{
+    width: 100%;
+}
+.booking__img{
+    background: url(../image/food.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 550px;
+}
+.booking__img::before{
+    content: "";
+    background-color: rgb(16 15 19 / 46%);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
+.booking__content p {
+    color: var(--font-color-2);
+}
+.booking__content .para{
+    font-size: 20px;
+    font-weight: 300;
+}
+.booking__content h3{
+    color: white;
+    font-size: 22px;
+}
+.booking__content h2{
+    font-size: 35px;
+}
+.booking__item{
+    display: flex;
+    justify-content: space-around;
+}
+.booking__item a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 900;
+    font-size: 18px;
+}
+.booking__item p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.booking__icon{
+    color: var(--primary-color);
+    background-color: white;
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.booking__icon i{
+    transition: all .3s;
+}
+.booking__deal:hover i{
+    color: var(--secondary-color);
+}
+.booking__deal{
+    padding: 20px 0;
+    line-height: 35px;
+}
+
+/* CATEGORIES */
+
+/* FEATURES */
+
+/* INTRO */
+
+/* NUMBER */
+
+/* VIDEO */
+
+/* BLOG */
+
+/* REVIEW */
+
+/* FOOTER */
+
+/* BACKTOTOP */
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 576px) {
+    /* HOME */
+
+    /* ABOUT */
+
+    /* BOOKING */
+
+    /* CATEGORIES */
+
+    /* FEATURES */
+
+    /* INTRO */
+
+    /* NUMBER */
+
+    /* VIDEO */
+
+    /* BLOG */
+
+    /* REVIEW */
+
+    /* FOOTER */
+
+    /* BACKTOTOP */
+}
+
+@media screen and (min-width:768px) {
+    /* HOME */
+
+    /* ABOUT */
+
+    /* BOOKING */
+    .booking__content{
+        padding: 0 40px;
+    }
+    .booking__box{
+        padding: 30px;
+    }
+    /* CATEGORIES */
+
+    /* FEATURES */
+
+    /* INTRO */
+
+    /* NUMBER */
+
+    /* VIDEO */
+
+    /* BLOG */
+
+    /* REVIEW */
+
+    /* FOOTER */
+
+    /* BACKTOTOP */
+}
+
+@media screen and (min-width:992px) {
+    /* HOME */
+
+    /* ABOUT */
+
+    /* BOOKING */
+    .booking__pic{
+        padding: 0;
+        max-width: 50%;
+     }
+    .booking__content{
+        max-width: 50%;
+    }
+    /* CATEGORIES */
+
+    /* FEATURES */
+
+    /* INTRO */
+
+    /* NUMBER */
+
+    /* VIDEO */
+
+    /* BLOG */
+
+    /* REVIEW */
+
+    /* FOOTER */
+
+    /* BACKTOTOP */
+}
+@media screen and (min-width:1200px) {
+    /* HOME */
+
+    /* ABOUT */
+
+    /* BOOKING */
+    
+    /* CATEGORIES */
+
+    /* FEATURES */
+
+    /* INTRO */
+
+    /* NUMBER */
+
+    /* VIDEO */
+
+    /* BLOG */
+
+    /* REVIEW */
+
+    /* FOOTER */
+
+    /* BACKTOTOP */
+}
+
+@media screen and (max-width:992px) {
+    .booking__img{
+        min-height: 200px;
+    }
+}
