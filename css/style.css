@@ -35,3 +35,13 @@ html,body{
 .title h2{
     color: var(--heading-color);
 }
+
+/* HOME */
+.home {
+    background-image: linear-gradient(to right, var(--primary-color), hsl(30deg 100% 1% / 20%)), url(../image/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+}
