@@ -45,3 +45,6 @@ html,body{
     background-attachment: fixed;
     min-height: 700px;
 }
+.container{
+    min-width: 1200px;
+}
