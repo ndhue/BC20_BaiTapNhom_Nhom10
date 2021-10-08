@@ -1,37 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinner Restaurants Category</title>
 
     <!-- FONT GOOGLE Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- FONT GOOGLE PACIFICO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
+    <!-- FONT GOOGLE Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 
     <!-- BS4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <!-- MAIN -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    <section class="home">
-        <div class="container container-lg">
-            <header></header>
-            <div class="home__info"></div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-fluid bg-transparent">
+                <div class="header__left">
+                    <a class="navbar-brand text-white font-weight-bold" href="#">Diner</a>
+                </div>
+                <div class="header__right d-flex">
+                    <form class="form-inline input-group">
+                        <input class="form-control" type="search" placeholder="Search here..">
+                        <button class="btn input-group-append bg-white" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="header__theme">
+                        <!-- Chưa làm ~~~~~~~~~~~~~~~~~~~~~ -->
+                    </div>
+                    <div class="header__modal">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#header__popup">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="modal fade w-100 h-100 text-center" id="header__popup" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content header__popup__bg">
+                                    <div>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span class="btn btn-warning">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="mr-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Blog</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">404</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Landing Page</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Contact</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Shot Codes</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#">Email</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__info col-6 text-white">
+                <h3 class="mb-4">The only thing we love more than food is you!</h3>
+                <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed
+                    consequuntur illum facere.</p>
+                <a class="header__button btn mt-sm-5 mt-4" href="#">
+                    Read More <span class="fa fa-chevron-right ml-2"></span></a>
+            </div>
+        </div>
+    </header>
+    <section class="about py-5">
+        <div class="container py-md-5">
+            <div class="row about__contain">
+                <div class="col-lg-5 about__left">
+                    <h6 class="about__title">About Us</h6>
+                    <h3 class="about__slogan mb-4">We found our creative space that is open for you.</h3>
+                </div>
+                <div class="col-lg-7 pl-lg-5 mt-lg-0 mt-3 about__right">
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                        elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+                        dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+                    </p>
+                    <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                        elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="about"></section>
     <section class="booking"></section>
     <section class="categories"></section>
     <section class="features"></section>
@@ -48,7 +146,7 @@
 
     <!-- BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
+
 </html>

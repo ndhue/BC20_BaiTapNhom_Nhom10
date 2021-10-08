@@ -36,15 +36,78 @@ html,body{
     color: var(--heading-color);
 }
 
-/* HOME */
-.home {
-    background-image: linear-gradient(to right, var(--primary-color), hsl(30deg 100% 1% / 20%)), url(../image/banner.jpg);
+/* HEADER */
+header {
+    background-image: linear-gradient(to right, var(--primary-color), #05030033), url(../image/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
     background-attachment: fixed;
     min-height: 700px;
 }
-.container{
-    min-width: 1200px;
+header a:hover{
+    text-decoration: none;
+}
+.header__left a{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    /* Sai font ~~~~~~~~~~~~~~~~~~~ */
+}
+#header__popup li{
+list-style-type: none;
+}
+#header__popup li a{
+    font-size: 20px;
+    font-weight: 600;
+}
+.header__popup__bg{
+    background: rgb(6 3 0 / 77%);
+}
+
+.header__info{
+    margin-top: 100px;
+}
+.header__info h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.header__button{
+    padding: 12px 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: var(--border-radius);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.header__button:hover{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+
+/* ABOUT */
+.about__title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.about__slogan{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.about__right p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
 }
