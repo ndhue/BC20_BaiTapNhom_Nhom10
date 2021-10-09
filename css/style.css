@@ -45,13 +45,17 @@ header {
     background-attachment: fixed;
     min-height: 700px;
 }
+header .container nav{
+    padding: 40px 0 20px 0;
+}
 header a:hover{
     text-decoration: none;
 }
 .header__left a{
     font-size: 36px;
     font-family: 'Roboto', sans-serif;
-    /* Sai font ~~~~~~~~~~~~~~~~~~~ */
+    padding: 0;
+    margin: 0;
 }
 #header__popup li{
 list-style-type: none;
@@ -72,6 +76,34 @@ list-style-type: none;
     line-height: 64px;
     font-weight: 600;
     text-transform: capitalize;
+}
+.header__right form{
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    width: 245.2px;
+    height: 100%;
+}
+.header__right input{
+    box-shadow: none;
+    border-color: transparent;
+    background-color: transparent;
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+}
+.header__right input:focus{
+    box-shadow: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+.header__right button{
+    align-items: center;
+    padding-right: 20px;
+}
+.header__right i{
+    color: var(--font-color);
+    font-size: 15px;
+
 }
 .header__button{
     padding: 12px 45px;
@@ -111,3 +143,8 @@ list-style-type: none;
     font-size: 18px;
     line-height: 28px;
 }
+
+
+
+
+/* MEDIA QUERY */
