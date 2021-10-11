@@ -45,7 +45,7 @@ header {
     background-attachment: fixed;
     min-height: 700px;
 }
-header .container nav{
+.header__nav{
     padding: 40px 0 20px 0;
 }
 header a:hover{
@@ -93,6 +93,7 @@ list-style-type: none;
 .header__right button{
     align-items: center;
     padding: 0 8px;
+    border: none;
 }
 .header__right i{
     color: var(--font-color);
@@ -197,23 +198,6 @@ list-style-type: none;
 
 
 /* RESPONSIVE */
-/* Header */
-@media screen and (min-width:480px) {
-    .header__info h3{
-        font-size: 40px;
-        line-height: 50px;
-    }
-    header{
-        min-height: 600px;
-    }
-}
-
-
-
-
-
-
-
 /* Desktop-first */
 @media screen and (min-width:1280px) {
     .container-lg{
@@ -246,6 +230,9 @@ list-style-type: none;
 @media screen and (max-width:600px) {
     .header__search{
         display: none;
+    }
+    .header__right{
+        margin-right: 20px;
     }
 }
 @media screen and (max-width:480px) {
