@@ -68,14 +68,8 @@ list-style-type: none;
     background: rgb(6 3 0 / 77%);
 }
 
-.header__info{
-    margin-top: 100px;
-}
-.header__info h3{
-    font-size: 54px;
-    line-height: 64px;
-    font-weight: 600;
-    text-transform: capitalize;
+.header__right{
+    align-items: center;
 }
 .header__right form{
     background-color: #fff;
@@ -98,12 +92,11 @@ list-style-type: none;
 }
 .header__right button{
     align-items: center;
-    padding-right: 20px;
+    padding: 0 8px;
 }
 .header__right i{
     color: var(--font-color);
     font-size: 15px;
-
 }
 .header__button{
     padding: 12px 45px;
@@ -120,7 +113,31 @@ list-style-type: none;
     background: #fff;
     color: var(--primary-color);
 }
-
+.header__theme{
+    margin-left: 20px;
+}
+.header__modal{
+    margin-left: 20px;
+}
+.header__modal> button i {
+    color: #fbfdfb;
+    font-size: 1.95em;
+}
+.header__info{
+    margin-top: 100px;
+    padding: 0;
+    max-width: 600px;
+}
+.header__info p{
+    margin-bottom: 0;
+    line-height: 28px;
+}
+.header__info h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
 /* ABOUT */
 .about__title{
@@ -172,11 +189,71 @@ list-style-type: none;
     visibility: visible;
     opacity: 1;
   }
+  .backToTop__button:hover{
+      color: #fff;
+      text-decoration: none;
+  }
 
 
 
-/* MEDIA QUERY */
+/* RESPONSIVE */
 /* Header */
-@media screen {
-    
+@media screen and (min-width:480px) {
+    .header__info h3{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    header{
+        min-height: 600px;
+    }
+}
+
+
+
+
+
+
+
+/* Desktop-first */
+@media screen and (min-width:1280px) {
+    .container-lg{
+        max-width: 1200px;
+    }
+}
+/* Mobile-first */
+@media screen and (max-width:1190px) {
+    .header__info h3{
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+@media screen and (max-width:992px) {
+    .header__info h3{
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+@media screen and (max-width:800px) {
+    .header__info h3{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    header{
+        min-height: 600px;
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width:600px) {
+    .header__search{
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    .header__info h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    header{
+        min-height: 450px;
+    }
 }
