@@ -31,9 +31,12 @@ html,body{
 .title h3{
     font-family: 'Pacifico', cursive;
     color: var(--primary-color);
+    font-size: 20px;
 }
 .title h2{
     color: var(--heading-color);
+    font-weight: 600;
+    font-size: 40px;
 }
 /* HOME */
 
@@ -229,7 +232,86 @@ html,body{
 /* VIDEO */
 
 /* BLOG */
+.blog{
+    padding: 80px 0;
+    background-color: var(--bg-grey);
+}
+.blog .title{
+    text-align: center;
+}
+.blog__container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.blog img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blog__img{
+    position: relative;
+}
+.blog__button{
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.blog__button button{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+.blog__button i{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.blog__item{
+    line-height: 30px;
+}
+.blog__item h5{
+    color: #000;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    padding-top: 30px;
+}
 
+.blog__author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__pic{
+    display: flex;
+    align-items: center;
+}
+.blog__pic img{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+.blog__item a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+.blog__readMore a{
+    transition: .3s;
+}
+.blog__readMore:hover a{
+    color: var(--primary-color);
+}
 /* REVIEW */
 
 /* FOOTER */
