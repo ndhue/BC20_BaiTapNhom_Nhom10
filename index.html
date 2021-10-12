@@ -130,12 +130,97 @@
             </div>
         </div>
     </section>
-    <section class="booking"></section>
+    <section class="booking">
+        <div class="booking__pic">
+            <div class="booking__img"></div>
+        </div>
+        <div class="booking__content title">
+            <div class="booking__box">
+                <h3>More than 3000 Restaurants</h3>
+                <h2>Book a table easly at the best price</h2>
+                <p class="para">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+                <div class="booking__item">
+                    <div class="booking__deal">
+                    <div class="booking__icon">
+                        <i class="fa fa-thumbs-up"></i>
+                    </div>
+                    <a href="#">Best Deals</a>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                    </div>
+    
+                    <div class="booking__deal">
+                    <div class="booking__icon">
+                        <i class="fa fa-utensils"></i>
+                    </div>
+                    <a href="#">Best Food</a>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="categories"></section>
     <section class="features"></section>
-    <section class="intro"></section>
-    <section class="number"></section>
-    <section class="video"></section>
+    <section class="intro">
+        <div class="intro__container">
+            <div class="intro__content">
+                <h2>Deliciousness jumping into the mouth.</h2>
+                <div class="intro__box">
+                    <button class="intro__read">Read More <i class="fa fa-angle-right"></i></button>
+                    <button class="intro__contact">Contact us <i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="number">
+        <div class="number__container">
+            <div class="number__content">
+                <div class="number__box col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="number__item">
+                        <div class="number__icon">
+                            <i class="fa fa-building"></i>
+                        </div>
+                        <h3 class="counter">15,100</h3>
+                        <p>Branches</p>
+                    </div>
+                </div>
+                <div class="number__box col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="number__item">
+                        <div class="number__icon">
+                            <i class="fa fa-utensils"></i>
+                        </div>
+                        <h3 class="counter">19,256</h3>
+                        <p>Food Items</p>
+                    </div>
+                </div>
+                <div class="number__box col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="number__item">
+                        <div class="number__icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3 class="counter">12,100</h3>
+                        <p>Chefs</p>
+                    </div>
+                </div>
+                <div class="number__box col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="number__item">
+                        <div class="number__icon">
+                            <i class="fa fa-smile"></i>
+                        </div>
+                        <h3 class="counter">2,560</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <!-- <div class="video__container">
+            <div class="video__dialog">
+                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div>
+        </div> -->
+    </section>
     <section class="blog"></section>
     <section class="review"></section>
     <footer></footer>
@@ -152,6 +237,13 @@
     <script src="./js/back-to-top/util.js"></script>
     <script src="./js/back-to-top/backToTop.js"></script>
    
+
+    <!-- COUNTUP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
 
     <!-- BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
