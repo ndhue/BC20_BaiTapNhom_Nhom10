@@ -253,9 +253,11 @@ header a:hover {
 .categories__menu{
     display:flex;
     flex-wrap: wrap;
-    width: 80%;
-    
-    margin: 40px auto;
+    align-items: center;
+    /* margin: 40px auto; */
+    padding: 0 20% !important;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .categories__item img{
     width: 100%;
@@ -265,6 +267,8 @@ header a:hover {
     object-fit: cover;
     filter: grayscale(-200%) contrast(70%);
     filter: brightness(80%);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    /* border-color: #363634; */
 }
 .categories__item:hover{
     filter: grayscale(20%) contrast(90%);
@@ -346,8 +350,8 @@ header a:hover {
     line-height: 28px;
 }
 .card{
+    border: 1px solid rgba(225, 225, 225, 0.2);
     background-color: var(--bg-color);
-    border: 1px solid var(--bg-color);
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 5%);
     margin: 20px 0;
 }
@@ -630,7 +634,6 @@ header a:hover {
 }
 /* REVIEW*/
 .review{
-    height: 700px;
     background-color: var(--bg-color);
 }
 .review p,.review h2,.review h3,.review h4{
@@ -659,15 +662,16 @@ header a:hover {
     width: 85px;
     border-radius: 50%;
     align-items: center;
+    margin-top: -50px;
 }
 .review__top{
     height: 1000px;
 }
 .carousel-inner{
-    height: 500px;
+    /* height: 500px; */
 }
 .carousel-caption{
-    top: 180px;
+    position: initial;
 }
 .center{
     text-align: center;
@@ -677,7 +681,6 @@ header a:hover {
     height: 100%;
 }
 #review__carou{
-    height: 85%;
 }
 .review .carousel-indicators li{
     margin: 5px 10px;
