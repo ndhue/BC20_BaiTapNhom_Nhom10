@@ -117,7 +117,7 @@ html,body{
 
 /* CATEGORIES */
 .categories{
-    height: 1390px;
+    height: 1520px;
     background-color: #282828;
 }
 .categories__container{
@@ -145,6 +145,8 @@ html,body{
     object-fit: cover;
     filter: grayscale(-200%) contrast(70%);
     filter: brightness(80%);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    /* border-color: #363634; */
 }
 .categories__item:hover{
     filter: grayscale(20%) contrast(90%);
@@ -178,8 +180,8 @@ html,body{
 }
 /* FEATURES */
 .features{
-    background-color: #282828;
-    height: 600px;
+    background-color: #232220;
+    height: 720px;
 }
 .features__nav{
     display: grid;
@@ -240,7 +242,8 @@ html,body{
 }
 .card{
     background-color: #232220;
-    border: 1px solid var(--border-color-light);
+    /* border: 1px solid var(--border-color-light); */
+    border-color: rgba(225, 225, 225, 0.2);
 }
 .card-body{
     /* border: 1px solid var(--border-color-light); */
@@ -598,7 +601,9 @@ review .title h2{
     /* BOOKING */
 
     /* CATEGORIES */
-
+@media screen (min-width: 992px) {
+    
+}
     /* FEATURES */
 
     /* INTRO */
