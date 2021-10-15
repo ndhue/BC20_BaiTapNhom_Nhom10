@@ -741,9 +741,12 @@ header a:hover {
   line-height: 35px;
   padding-top: 30px;
 }
+.dark .blog__item h5{
+  color: var(--font-color);
+}
 .blog__item a{
     text-decoration: none;
-    color: var(--font-color2);
+    color: var(--font-color);
     font-weight: 900;
 }
 .blog__pic {
@@ -761,7 +764,9 @@ header a:hover {
   color: #000;
   font-weight: 900;
 }
-
+.dark .blog__item a{
+  color: var(--font-color);
+}
 .blog__pic a{
     font-size: 14px;
 }
@@ -779,7 +784,7 @@ header a:hover {
     color: var(--font-color);
 }
 
-.review p, .review h2,.review h3,.review h4{
+.review p,.review h3,.review h4{
     color: rgba(22, 28, 45, 0.7);
 }
 .review h3,.review h4{
