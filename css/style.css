@@ -1006,6 +1006,17 @@ review .title h2 {
 .footer .form-group input{
   padding: 28px;
 }
+.footer .form-group input{
+  background-color: #f7f7f7;
+}
+.dark .footer .form-group input{
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+.dark .footer .form-group input:focus{
+  outline-color: var(--primary-color);
+  box-shadow: var(--primary-color);
+}
 /* BACKTOTOP */
 .backToTop__button {
   position: fixed;
