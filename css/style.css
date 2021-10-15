@@ -555,6 +555,9 @@ header a:hover {
   font-size: 40px;
   padding-top: 15px;
 }
+.dark .number__item h3{
+    color: var(--font-color2);
+}
 .number__item p {
   font-size: 18px;
   font-weight: 500;
@@ -647,6 +650,11 @@ header a:hover {
     flex-wrap: wrap;
     width: 80%;
 }
+.blog__author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .blog img{
     width: 100%;
     border-radius: 5px;
@@ -733,9 +741,12 @@ header a:hover {
   line-height: 35px;
   padding-top: 30px;
 }
+.dark .blog__item h5{
+  color: var(--font-color);
+}
 .blog__item a{
     text-decoration: none;
-    color: var(--font-color2);
+    color: var(--font-color);
     font-weight: 900;
 }
 .blog__pic {
@@ -753,6 +764,12 @@ header a:hover {
   color: #000;
   font-weight: 900;
 }
+.dark .blog__item a{
+  color: var(--font-color);
+}
+.blog__pic a{
+    font-size: 14px;
+}
 .blog__readMore a {
   transition: 0.3s;
 }
@@ -767,7 +784,7 @@ header a:hover {
     color: var(--font-color);
 }
 
-.review p, .review h2,.review h3,.review h4{
+.review p,.review h3,.review h4{
     color: rgba(22, 28, 45, 0.7);
 }
 .review h3,.review h4{
@@ -990,6 +1007,20 @@ review .title h2 {
 }
 .row .W3layout:hover {
   color: #ddd !important;
+}
+.footer .form-group input{
+  padding: 28px;
+}
+.footer .form-group input{
+  background-color: #f7f7f7;
+}
+.dark .footer .form-group input{
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+.dark .footer .form-group input:focus{
+  outline-color: var(--primary-color);
+  box-shadow: var(--primary-color);
 }
 /* BACKTOTOP */
 .backToTop__button {
