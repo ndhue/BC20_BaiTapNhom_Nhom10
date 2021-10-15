@@ -556,7 +556,7 @@ header a:hover {
   padding-top: 15px;
 }
 .dark .number__item h3{
-    color: var(--font-color);
+    color: var(--font-color2);
 }
 .number__item p {
   font-size: 18px;
@@ -1002,6 +1002,9 @@ review .title h2 {
 }
 .row .W3layout:hover {
   color: #ddd !important;
+}
+.footer .form-group input{
+  padding: 28px;
 }
 /* BACKTOTOP */
 .backToTop__button {
