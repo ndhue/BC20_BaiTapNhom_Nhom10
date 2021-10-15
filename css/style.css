@@ -555,6 +555,9 @@ header a:hover {
   font-size: 40px;
   padding-top: 15px;
 }
+.dark .number__item h3{
+    color: var(--font-color);
+}
 .number__item p {
   font-size: 18px;
   font-weight: 500;
@@ -646,6 +649,11 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+}
+.blog__author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .blog img{
     width: 100%;
@@ -752,6 +760,10 @@ header a:hover {
   text-decoration: none;
   color: #000;
   font-weight: 900;
+}
+
+.blog__pic a{
+    font-size: 14px;
 }
 .blog__readMore a {
   transition: 0.3s;
