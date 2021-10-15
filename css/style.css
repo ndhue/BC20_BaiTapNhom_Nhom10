@@ -147,9 +147,20 @@ header a:hover {
 .header__modal {
   margin-left: 20px;
 }
+.header__modal > button:focus{
+  box-shadow: none;
+}
 .header__modal > button i {
   color: #fbfdfb;
   font-size: 1.95em;
+}
+#header__popup{
+  padding: 0!important;
+}
+#header__popup .modal-dialog{
+  margin: 0!important;
+  max-width: 100%!important;
+  height: 1vh!important;
 }
 .header__info {
   margin-top: 100px;
