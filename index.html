@@ -752,7 +752,17 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
     <!-- MAIN JS -->
-    <script src="./js/main.js"></script>
+    <script>
+        document.getElementById("themeSwitch").onclick = function () {
+  document.getElementById("themeSwitch").classList.toggle("switch");
+};
+document.getElementById("themeMoon").onclick = function(){
+    document.documentElement.classList.add("dark");
+}
+document.getElementById("themeSun").onclick = function(){
+    document.documentElement.classList.remove("dark");
+}
+    </script>
 </body>
 
 </html>
