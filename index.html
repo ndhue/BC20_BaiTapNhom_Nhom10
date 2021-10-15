@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body id="myBody">
     <header>
         <div class="container">
             <nav class="header__nav navbar navbar-expand-fluid bg-transparent">
@@ -50,7 +50,13 @@
                         </button>
                     </form>
                     <div class="header__theme">
-                        <!-- Chưa làm ~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="toggle-container">
+                            <button >
+                              <i class="far fa-sun theme-btn light" onclick="setTheme('light')" title="Light mode"></i>
+                              <i class="far fa-moon theme-btn dark" onclick="setTheme('dark')" title="Dark mode"></i>
+                            </button>
+                            
+                          </div>
                     </div>
                     <div class="header__modal">
                         <button type="button" class="btn" data-toggle="modal" data-target="#header__popup">
@@ -160,20 +166,14 @@
             </div>
         </div>
     </section>
-
     <section class="categories py-5">
-
-    <section class="categories">
-
         <div class="categories__container py-lg-5 py-md-3 py-3">
             <div class="title">
-                <h3 style="padding-top: 25px;">What's New</h3>
+                <h3>What's New</h3>
                 <h2>Popular Categories</h2>
             </div>
-
-            <div class="categories__menu-grid row" style="width: 80%; margin: 0 10%;">
-                
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+            <div class="categories__menu-grid row">               
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
 
                     <a href="#">
                         <img src="./image/category1.jpg" class="img img-fluid" alt="dinner">
@@ -184,10 +184,7 @@
                         <h4 class="mt-sm-2 mb-0">$350</h4>
                     </div>
                 </div>
-
-                
-
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
 
                     <a href="#">
                         <img src="./image/category2.jpg" class="img img-fluid"  alt="dinner">
@@ -197,12 +194,8 @@
                         <h4>$550</h4>
                     </div>
                 </div>
-
-                
-
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-
-                    <a href="#">
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
+                 <a href="#">
                         <img src="./image/category3.jpg" class="img img-fluid"  alt="dinner">
                     </a>
                     <div class="categories__item__text">
@@ -210,11 +203,7 @@
                         <h4>$650</h4>
                     </div>
                 </div>
-
-                
-
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
                     <a href="#">
                         <img src="./image/category4.jpg" class="img img-fluid"  alt="dinner">
                     </a>
@@ -222,12 +211,8 @@
                         <a href="#"><span>Bakery</span></a>
                         <h4>$550</h4>
                     </div>
-                </div>  
-
-                
-
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-
+                </div> 
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
                     <a href="#">
                         <img src="./image/category5.jpg" class="img img-fluid"  alt="dinner">
                     </a>
@@ -236,11 +221,7 @@
                         <h4>$750</h4>
                     </div>
                 </div>
-
-                
-
-                <div class="categories__item col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-
+                <div class="categories__item col-lg-4 col-6 mt-lg-0 mt-4">
                     <a href="#">
                         <img src="./image/category6.jpg" class="img img-fluid"  alt="dinner">
                     </a>
@@ -252,7 +233,6 @@
             </div>
             
         </div>
-
     </section>
     <section class="features py-5">
         <div class="features__container">
@@ -424,12 +404,10 @@
                     <i class="fa fa-play"></i>
                 </span>
               </a>
-              <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-              </div>
             </div>
             <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
               <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+              <button title="Close (Esc)" type="button" class="mfp-close">×</button>
             </div>
           </div>
     </section>
@@ -438,7 +416,7 @@
             <h3>Latest Posts</h3>
             <h2>Blog Posts</h2>
         </div>
-        <div class="blog__container">
+        <div class="blog__container py-md-5 py-2"">
             <div class="blog__item col-lg-4 col-md-6 mt-5">
                 <div class="blog__card">
                     <div class="blog__img">
@@ -665,7 +643,6 @@
                     <p style="color: #a5a2a1; font-size: 17px; line-height: 26px;">Enter your email and receive the latest news, updates and special offers from us.</p>
                     <form>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Andress">
                         </div>
                         <button type="submit" class="btn btn-primary">Subscribe now</button>
@@ -749,6 +726,10 @@
     <!-- BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+        <script>
+            const setTheme = theme => document.documentElement.className = theme;
+        </script>
 </body>
 
 </html>
